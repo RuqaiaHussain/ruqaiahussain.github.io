@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do List</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>  
+
+
+
+</head>
+<body class=" bg-slate-200 ">
+    <div class=" grid grid-cols-3 h-screen">
+
+        <div class="bg-slate-400 w-90 h-screen shadow-2xl  ">
+            <div class="flex justify-end m-4 text-2xl font-bold shadow-lg">القائمه
+                <i class='bxr  bx-menu-wider pl-2 pt-1'></i>  
+            </div>
+            <div class="pr-8 mt-10">
+                <div class=" container bg-slate-500/75  py-0.5 w-full rounded-md">
+                    <div class="flex justify-end m-6 "> الصفحه الرئيسية 
+                        <i class='bxr  bx-brick pl-2 pt-1 text-xl '></i> 
+                    </div>
+                </div>
+                 
+                <div class="hover:scale-105 py-0.5 mt-2 opacity-75 hover:rounded-md">
+
+                    <div class="flex justify-end m-6 "> التقويم 
+                        <i class='bxr  bx-calendar-alt pl-2 pt-1 text-xl' ></i> 
+                    </div> 
+
+                </div>
+                
+                <div class="hover:scale-105 py-0.5 mt-2 opacity-75 hover:rounded-md">
+                    
+                    <div class="flex justify-end m-6"> الدعم 
+                        <i class='bxr  bx-arrow-down-left-stroke pl-2 pt-1 text-xl'></i> 
+                    </div>
+
+                </div>
+               
+                <div class="hover:scale-105 py-0.5 mt-2 opacity-75 hover:rounded-md">
+                     
+                    <div class="flex justify-end m-6"> محذوقة مؤخراً  
+                        <i class='bxr  bx-trash pl-2 pt-1 text-xl'></i> 
+                    </div>
+
+                </div>
+                
+
+            </div>
+            
+
+        </div>
+
+
+
+
+        <div class="col-span-2 overflow-y-auto ">
+            
+            <div class="text-5xl  pt-3  mb-18 shadow-lg pb-3"> Welcome To-Do List</div>
+            <div class=" flex space-x-12">
+                <div class="continer w-full h-2/5 bg-slate-300 rounded-lg mr-32 ">
+                    <div class=" flex justify-center text-2xl font-bold pt-2 pb-8">تذكير جديد</div>
+                    
+                    
+                        <div class="  pr-4 mb-5 font-bold flex  items-center justify-center   "> 
+                        <input type="text" class="rounded-md  bg-white w-full ml-4  mr-6 text-right text-ms pr-2 h-10 hover:bg-neutral-200 duration-400" placeholder="اسم العنوان"> 
+                        <label class="text-right flex items-center"> العنوان</label>
+                        </div>
+    
+                    
+                    <div class=" flex justify-end pr-4 mb-5 font-bold">
+                        <input type="text" class="rounded-md  bg-white w-full  h-20 ml-4  text-ms mr-3 text-right pr-2 hover:bg-neutral-200 duration-300" placeholder="مـلاحظـات " > 
+                      <label class="text-right my-6"> التفاصيل </label> 
+                    </div>
+    
+    
+                    <div class=" flex justify-end items-center pr-4 mb-5 font-bold"> 
+                        <input type="datetime-local" class="rounded-md  bg-white w-full h-10 ml-4 pl-4 text-ms mr-12 text-right pr-2 hover:bg-neutral-200 duration-300"  >
+                        <label class="text-right"> منذ </label> 
+                    </div>
+    
+    
+                    <div class=" flex justify-center items-center pr-4 mb-5 font-bold">
+                        <input type="datetime-local" class="rounded-md  bg-white w-full h-10 ml-4 pl-4   mr-12 text-ms mb-19  pr-2 hover:bg-neutral-200 duration-300 ">
+                     
+                        <label class="  "> الى </label>
+                    
+                    </div>
+    
+                    
+                    <div class="flex justify-between ">
+                        
+                        <i class='bxr  bxs-toggle-left  pl-4 pt-1 text-4xl text-green-700  ' ></i>
+                        <div class="  pr-4 mb-5 font-bold"> تذكير </div>
+                    </div>
+                    
+    
+                    <div class="flex justify-center ">
+    
+                        <button class=" w-15.5 bg-green-700 hover:bg-green-900 rounded-full h-12 flex items-end text-white text-3xl font-bold px-5 py-2.5 mb-3 "> + </button>
+    
+                    </div>
+    
+    
+                    
+                </div>
+
+                
+            </div>
+            
+
+    
+
+            <div class=" flex space-x-12 mt-12">
+                <div class="continer w-2/5 h-2/5 bg-slate-300 rounded-lg">
+                    <div class=" flex justify-center text-xl font-bold pt-2 pb-5"> التذكيرات </div>
+                    
+                    <div class="flex justify-between">
+                    <i class='bxr  bx-trash pl-2 pt-1 text-xl ml-3 text-neutral-500  hover:text-neutral-950'></i> 
+
+                        <div class="  pr-4 mb-5 font-bold flex justify-end  "> 
+
+                            امتحان مد
+                        <input type="radio" class="w-6 h-6 ml-8 ">
+                        
+                        </div>
+
+                    </div>
+                        
+    
+                    <div class="flex justify-between">
+                    <i class='bxr  bx-trash pl-2 pt-1 text-xl ml-3 text-neutral-500  hover:text-neutral-950'></i> 
+
+                        <div class=" flex justify-end pr-4 mb-5 font-bold ">
+                            دين 50 
+                            <input type="radio" class="w-6 h-6 ml-8">
+                            
+                        </div>
+                    </div>
+                    
+    
+                    <div class="flex justify-between">
+                        <i class='bxr  bx-trash pl-2 pt-1 text-xl ml-3 text-neutral-500  hover:text-neutral-950'></i> 
+
+                        <div class=" flex justify-end pr-4 mb-5 font-bold ">
+                             قراءة قرأن
+                            
+                            <input type="radio" class="w-6 h-6 ml-8">
+                            
+                        </div>
+        
+                    </div>
+                    
+                    <div class="flex justify-between">
+                        <i class='bxr  bx-trash pl-2 pt-1 text-xl ml-3 text-neutral-500  hover:text-neutral-950'></i> 
+
+                        <div class=" flex justify-end pr-4 mb-5 font-bold ">
+                             عيد ميلاد 
+                            <input type="radio" class="w-6 h-6 ml-8">
+                            
+                        </div>
+        
+                    </div>
+    
+    
+                    <div class="flex justify-center pt-23">
+    
+                        <button class=" w-15.5 bg-red-700  hover:bg-red-900 rounded-full h-12 flex items-end text-white text-4xl font-bold px-5.5 py-2.5 mb-3 "> - </button>
+
+    
+                    </div>
+                    
+                </div>
+                <div class="continer  w-2/5  max-h-2/5 bg-slate-300 rounded-lg">
+                    <div class=" flex justify-center text-xl font-bold pt-2 pb-5"> المكتملة </div>
+                    
+                    <div class="flex justify-between">
+                    <i class='bxr  bx-trash pl-2 pt-1 text-xl ml-3 text-neutral-500  hover:text-neutral-950'></i> 
+
+                        <div class="  pr-4 mb-5 font-bold flex justify-end line-through "> 
+
+                            طبيب اسنان
+                        <input type="radio" checked class="w-6 h-6 ml-8">
+                        
+                        </div>
+
+                    </div>
+                        
+    
+                    <div class="flex justify-between">
+                    <i class='bxr  bx-trash pl-2 pt-1 text-xl ml-3 text-neutral-500 hover:text-neutral-950'></i> 
+
+                        <div class=" flex justify-end pr-4 mb-5 font-bold line-through">
+                            كورس برمجه
+                            <input type="radio" checked class="w-6 h-6 ml-8">
+                            
+                        </div>
+                    </div>
+                    
+    
+                    <div class="flex justify-between">
+                        <i class='bxr  bx-trash pl-2 pt-1 text-xl ml-3 text-neutral-500  hover:text-neutral-950'></i> 
+
+                        <div class=" flex justify-end pr-4 mb-5 font-bold line-through">
+                            قراءة كتاب
+                            
+                            <input type="radio" checked class="w-6 h-6 ml-8">
+                            
+                        </div>
+        
+                    </div>
+                    
+                    <div class="flex justify-between">
+                        <i class='bxr  bx-trash pl-2 pt-1 text-xl ml-3 text-neutral-500  hover:text-neutral-950'></i> 
+
+                        <div class=" flex justify-end pr-4 mb-5 font-bold line-through">
+                             سورة الملك
+                            <input type="radio" checked class="w-6 h-6 ml-8">
+                            
+                        </div>
+        
+                    </div>
+                    
+    
+                    
+                    
+                    
+    
+                    <div class="flex justify-center pt-23">
+    
+                        <button class=" w-15.5 bg-red-700 hover:bg-red-900 rounded-full h-12 flex items-end text-white text-4xl font-bold px-5.5 py-2.5 mb-3 "> - </button>
+
+    
+                    </div>
+    
+    
+                    
+                </div>
+            </div>
+                
+
+            
+            
+
+        </div>
+
+
+
+
+    </div>
+    
+
+
+    
+    
+    
+</body>
+</html>
