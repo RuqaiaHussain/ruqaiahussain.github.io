@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To_Do List</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="/ToDo/output.css" rel="stylesheet">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>  
 
 
 
 </head>
-<body class=" bg-slate-200 w-full ">
+<body class=" bg-slate-200 w-full">
     <div class=" grid grid-cols-3 h-screen ">
 
         <div class="bg-slate-400 xl:w-90 h-screen shadow-2xl sm:w-60 sm:text-sm ">
@@ -174,7 +174,7 @@
                     </div>
                     
                 </div>
-                <div class="continer  min-w-2/5  h-2/5 bg-slate-300 rounded-lg">
+                <div class="continer  min-w-2/5  h-2/5 bg-slate-300 rounded-lg xl:w-2/5">
                     <div class=" flex justify-center text-xl font-bold pt-2 pb-5"> المكتملة </div>
                     
                     <div class="flex justify-between">
