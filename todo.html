@@ -13,14 +13,14 @@
 
 </head>
 <body class=" bg-slate-200 ">
-    <div class=" grid grid-cols-3 h-screen">
+    <div class=" grid grid-cols-3 h-screen ">
 
-        <div class="bg-slate-400 w-90 h-screen shadow-2xl  ">
+        <div class="bg-slate-400 xl:w-90 h-screen shadow-2xl sm:w-60 sm:text-sm ">
             <div class="flex justify-end m-4 text-2xl font-bold shadow-lg">القائمه
                 <i class='bxr  bx-menu-wider pl-2 pt-1'></i>  
             </div>
-            <div class="pr-8 mt-10">
-                <div class=" container bg-slate-500/75  py-0.5 w-full rounded-md">
+            <div class="pr-8 mt-10 md:text-lg">
+                <div class=" container bg-slate-500/75  py-0.5 w-full md:min-h-14 rounded-md">
                     <div class="flex justify-end m-6 "> الصفحه الرئيسية 
                         <i class='bxr  bx-brick pl-2 pt-1 text-xl '></i> 
                     </div>
@@ -59,12 +59,12 @@
 
 
 
-        <div class="col-span-2 overflow-y-auto ">
+        <div class="col-span-2  overflow-y-auto object-cover sm:pl-2 sm:ml-2">
             
-            <div class="text-5xl  pt-3  mb-18 shadow-lg pb-3"> Welcome To-Do List</div>
+            <div class="xl:text-5xl sm:text-lg md:text-xl lg:text-2xl  pt-3  mb-18 shadow-lg pb-3"> Welcome To-Do List</div>
             <div class=" flex space-x-12">
-                <div class="continer w-full h-2/5 bg-slate-300 rounded-lg mr-32 ">
-                    <div class=" flex justify-center text-2xl font-bold pt-2 pb-8">تذكير جديد</div>
+                <div class="continer w-full  h-2/5  bg-slate-300 rounded-lg mr-32 sm:text-lg  ">
+                    <div class=" flex justify-center text-lg xl:text-2xl font-bold pt-2 pb-8">تذكير جديد</div>
                     
                     
                         <div class="  pr-4 mb-5 font-bold flex  items-center justify-center   "> 
@@ -84,13 +84,11 @@
                         <label class="text-right"> منذ </label> 
                     </div>
     
-    
-                    <div class=" flex justify-center items-center pr-4 mb-5 font-bold">
-                        <input type="datetime-local" class="rounded-md  bg-white w-full h-10 ml-4 pl-4   mr-12 text-ms mb-19  pr-2 hover:bg-neutral-200 duration-300 ">
-                     
-                        <label class="  "> الى </label>
-                    
+                    <div class=" flex justify-end items-center pr-4 mb-5 font-bold"> 
+                        <input type="datetime-local" class="rounded-md  bg-white w-full h-10 ml-4 pl-4 text-ms mr-12 text-right pr-2 hover:bg-neutral-200 duration-300"  >
+                        <label class="text-right"> الى </label> 
                     </div>
+                    
     
                     
                     <div class="flex justify-between ">
@@ -116,8 +114,8 @@
 
     
 
-            <div class=" flex space-x-12 mt-12">
-                <div class="continer w-2/5 h-2/5 bg-slate-300 rounded-lg">
+            <div class="block md:flex space-x-12 mt-12">
+                <div class="continer min-w-2/5 h-2/5 bg-slate-300 rounded-lg mb-12">
                     <div class=" flex justify-center text-xl font-bold pt-2 pb-5"> التذكيرات </div>
                     
                     <div class="flex justify-between">
@@ -176,7 +174,7 @@
                     </div>
                     
                 </div>
-                <div class="continer  w-2/5  max-h-2/5 bg-slate-300 rounded-lg">
+                <div class="continer  min-w-2/5  h-2/5 bg-slate-300 rounded-lg">
                     <div class=" flex justify-center text-xl font-bold pt-2 pb-5"> المكتملة </div>
                     
                     <div class="flex justify-between">
